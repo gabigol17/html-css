@@ -2,21 +2,45 @@
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tags HTML</title>
+    <title>Personalização de fundo</title>
+    <style>
+
+        body {
+            background-image: url('imagens/wallpaper002.jpg');
+        }
+
+        div#q1 {
+            background-color: blueviolet;
+        }
+        div#q2 {
+            background-image: linear-gradient(to bottom, black, red );
+        }
+        div#q3 {
+            background-image: url('imagens/pattern002.png')
+        }
+        
+        div.quadrado {
+            display: inline-block;
+            border-radius: 10px;
+            background-color: white;
+            border: 1px solid black;
+            width: 300px;
+            height: 300px;
+            
+        }
+
+    </style>
 </head>
 <body>
-    <h1>Tags em HTML</h1>
-    <p>Em HTML5, podemos inserir os elementos da lista a seguir. Passe o mouse sobre os termos para descobrir qual tag deverá utilizar em cada cas.</p>
-    <ul type ="square">
-        <li><abbr title="Use a tag <p>">Parágrafo</abbr>
-        <li><abbr title="Use as tags <h1> á <h6>">Títulos</abbr>
-        <li><abbr title="Use a tag <img>">Imagens</abbr>
-        <li><abbr title="Use a tag <abbr>">Abreviações</abbr>
-        <li><abbr title="Use a tag <code>">Códigos-fonte</abbr>
-        <li><abbr title="Use a tag <ol> e <li>">Listas numeradas</abbr>
-        <li><abbr title="Use a tag <ul> e <li>">Listas com demarcadores</abbr>
-    </ul>
+   <div class="quadrado" id="q1">
+    
+   </div>
+   <div class="quadrado" id="q2">
+
+   </div>
+   <div class="quadrado" id="q3">
+
+   </div>
 </body>
 </html>
